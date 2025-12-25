@@ -1,3 +1,4 @@
+// - A component is a reusable unit of UI logic. which is a function
 function Button(){
     return (
         <div>
