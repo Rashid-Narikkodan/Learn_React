@@ -8,3 +8,5 @@ class Button extends React.Component{
         return <button onClick={()=>this.increase()}>{this.state.count}</button>
     }   
 }
+
+//it has state without hooks, old model es6 model
