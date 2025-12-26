@@ -1,10 +1,10 @@
 import { useRef } from 'react'
 
 function Form() {
-  const inputRef = useRef() //{current:{value}}
-  const handleInput=(e)=>{
+  const inputRef = useRef<HTMLInputElement | null>(null) //{current:{value}}
+  const handleInput=(e:React.ChangeEvent<HTMLInputElement>)=>{
     console.log(e.target.value)
-    console.log(inputRef.current.value)
+    console.log(inputRef.current?.value)
   }
   return (
     <form>
