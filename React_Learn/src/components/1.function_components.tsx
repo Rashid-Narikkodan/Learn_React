@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 // primarly we are using this function component
-function Label({ label }) {
+function Label() {
   return <label>{label}</label>;
 }
 //Nothing just a component using function, 

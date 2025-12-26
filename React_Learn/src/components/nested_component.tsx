@@ -1,7 +1,7 @@
 // - place a component inside a component is nested components
 // or component composition
 function Logo(){
-    return <img src="../assets/react.svg" alt="logo" />
+    return <img src='/react.svg' alt="logo" />
 }
 
 export default function Header(){
