@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 // primarly we are using this function component
-function Button({ label }) {
-  return <button>{label}</button>;
+function Label({ label }) {
+  return <label>{label}</label>;
 }
 //Nothing just a component using function, 
 //we can also pass values to a component known as Props
@@ -25,7 +25,7 @@ function Counter(){
 
 //Hooks are special functions provided by React that let function components “hook into” React’s internal system.
 //so using hooks we can achive state in function component
-function Counter(){
+function Counter2(){
     let [count,setCount]=useState(0)
     return (
         <div>
@@ -34,3 +34,8 @@ function Counter(){
     )
 }
 // Now there each time when click button, count is preserved to the react state
+export {
+    Label,
+    Counter,
+    Counter2
+}

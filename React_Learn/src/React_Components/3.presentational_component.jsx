@@ -1,4 +1,4 @@
-function Label({label}){
+export default function Label({label}){
     return <label>{label}</label>
 }
 
