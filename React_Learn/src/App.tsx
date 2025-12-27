@@ -10,7 +10,7 @@ import Input from "./components/5.controlled_components";
 import Header from "./components/nested_component";
 import Form from "./components/6.uncontrolled_component";
 import UseEffectComponent,{ UserList } from "./hooks/useEffect";
-
+import Counter3 from "./hooks/useEffect_with_dependency";
 
 export default function App() {
   return (
@@ -70,6 +70,12 @@ export default function App() {
         <UseEffectComponent />
         <UserList />
       </div>
+    
+      <div className="border border-black p-2 rounded-2xl">
+        <Counter3 />
+      </div>
+
+
     </div>
   );
 }

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react"
 
     export function UserList(){
-        const users = {length:0}//fetch('/api/users')// -this is a side effect(fetching data, or calling api)
-        return <div>{users.length||null}</div>
+        const users = {length:1}//fetch('/api/users')// -this is a side effect(fetching data, or calling api)
+        return <div>{users.length}</div>
     }
     //this function is wrong
 
