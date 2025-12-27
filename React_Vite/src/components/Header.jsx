@@ -29,9 +29,8 @@ function Header({ title }) {
       {isPlaying && (
         <video
           src="/logo_video.mp4"
-          autoPlay
-          className={`
-      fixed z-50 object-contain top-0 left-0 w-screen h-auto`}
+          autoPlay={true}
+          className={`fixed z-50 object-contain top-0 left-0 w-screen h-auto`}
           onEnded={() => {
             setPlay(false);
           }}
