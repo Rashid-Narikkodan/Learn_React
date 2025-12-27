@@ -10,3 +10,6 @@ const useStateComponent = () => {
 }
 
 export default useStateComponent
+
+//react preserve a state for x and which is managed by setX
+// so re-render in this function will not change teh x

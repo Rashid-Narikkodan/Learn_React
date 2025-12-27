@@ -9,6 +9,8 @@ import UserContainer from "./components/4.container_component";
 import Input from "./components/5.controlled_components";
 import Header from "./components/nested_component";
 import Form from "./components/6.uncontrolled_component";
+import UseEffectComponent,{ UserList } from "./hooks/useEffect";
+
 
 export default function App() {
   return (
@@ -62,6 +64,11 @@ export default function App() {
       <br />
       <Form />
       <Label label="Form components wich values are controlled by DOM using React Hooks like useRef()" />
+      </div>
+
+      <div className="border border-black p-2 rounded-2xl">
+        <UseEffectComponent />
+        <UserList />
       </div>
     </div>
   );
