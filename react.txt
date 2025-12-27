@@ -1,0 +1,149 @@
+React
+│
+├─ 1. Core Fundamentals
+│   ├─ What is React (library, not framework)
+│   ├─ JSX
+│   │   ├─ JSX vs HTML
+│   │   ├─ Expressions in JSX
+│   │   └─ JSX compilation (Babel)
+│   ├─ Virtual DOM
+│   ├─ Rendering & Reconciliation
+│   └─ React Element vs Component vs Instance
+│
+├─ 2. Components
+│   ├─ Function Components
+│   │   ├─ Props
+│   │   ├─ Composition
+│   │   └─ Re-render behavior
+│   ├─ Class Components (legacy)
+│   │   ├─ state, setState
+│   │   ├─ lifecycle methods
+│   │   └─ why deprecated in modern React
+│   ├─ Presentational vs Container Components
+│   ├─ Controlled vs Uncontrolled Components
+│   └─ Reusability patterns
+│
+├─ 3. State Management
+│   ├─ useState
+│   │   ├─ state batching
+│   │   ├─ functional updates
+│   │   └─ derived state pitfalls
+│   ├─ Lifting State Up
+│   ├─ State vs Props
+│   ├─ Local vs Global State
+│   └─ When NOT to use state
+│
+├─ 4. Hooks
+│   ├─ Rules of Hooks
+│   ├─ Built-in Hooks
+│   │   ├─ useState
+│   │   ├─ useEffect
+│   │   │   ├─ dependency array
+│   │   │   ├─ cleanup
+│   │   │   └─ common bugs
+│   │   ├─ useRef
+│   │   ├─ useContext
+│   │   ├─ useMemo
+│   │   └─ useCallback
+│   ├─ Custom Hooks
+│   │   ├─ logic reuse
+│   │   └─ hook composition
+│   └─ Why hooks replaced HOCs & mixins
+│
+├─ 5. Effects & Lifecycle
+│   ├─ Component lifecycle (conceptual)
+│   │   ├─ mount
+│   │   ├─ update
+│   │   └─ unmount
+│   ├─ Side effects
+│   │   ├─ data fetching
+│   │   ├─ subscriptions
+│   │   └─ timers
+│   └─ StrictMode behavior
+│
+├─ 6. Refs & DOM Interaction
+│   ├─ useRef
+│   ├─ forwardRef
+│   ├─ ImperativeHandle
+│   ├─ Controlled vs DOM-managed inputs
+│   └─ When direct DOM access is acceptable
+│
+├─ 7. Context
+│   ├─ Context API
+│   ├─ Provider / Consumer
+│   ├─ useContext
+│   ├─ Prop drilling problem
+│   └─ Performance pitfalls
+│
+├─ 8. Performance Optimization
+│   ├─ React.memo
+│   ├─ useMemo
+│   ├─ useCallback
+│   ├─ Key usage & reconciliation
+│   ├─ Avoiding unnecessary re-renders
+│   └─ Profiling
+│
+├─ 9. Patterns & Architecture
+│   ├─ Composition over inheritance
+│   ├─ Higher-Order Components (HOC)
+│   ├─ Render Props
+│   ├─ Container / Presentational pattern
+│   ├─ Feature-based folder structure
+│   └─ Separation of concerns
+│
+├─ 10. Forms & Validation
+│   ├─ Controlled forms
+│   ├─ Uncontrolled forms
+│   ├─ Form libraries (conceptual)
+│   ├─ Validation strategies
+│   └─ Accessibility (a11y)
+│
+├─ 11. Routing
+│   ├─ Client-side routing concept
+│   ├─ React Router
+│   │   ├─ Routes / Route
+│   │   ├─ useParams
+│   │   ├─ useNavigate
+│   │   └─ Protected routes
+│   └─ Lazy loading routes
+│
+├─ 12. Data Fetching
+│   ├─ Fetch API
+│   ├─ useEffect + async
+│   ├─ Loading & error states
+│   ├─ Caching concepts
+│   └─ Server state vs UI state
+│
+├─ 13. Styling
+│   ├─ CSS Modules
+│   ├─ Tailwind CSS
+│   ├─ Inline styles
+│   ├─ Conditional styling
+│   └─ Design consistency
+│
+├─ 14. Build & Tooling
+│   ├─ Vite
+│   ├─ npm / pnpm
+│   ├─ Babel
+│   ├─ ES modules
+│   └─ Environment variables
+│
+├─ 15. Testing (awareness level)
+│   ├─ Unit testing concepts
+│   ├─ Component testing
+│   ├─ Mocking
+│   └─ What to test vs not
+│
+├─ 16. Security & Best Practices
+│   ├─ XSS prevention
+│   ├─ Dangerous HTML
+│   ├─ Handling secrets
+│   └─ Safe API usage
+│
+└─ 17. Advanced / Modern React
+├─ Server Components (conceptual)
+├─ Server-first rendering
+├─ Suspense
+├─ Error Boundaries
+├─ Streaming UI
+└─ When React is NOT the right choice
