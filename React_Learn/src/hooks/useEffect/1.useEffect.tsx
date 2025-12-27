@@ -17,7 +17,7 @@ const useEffectComponent = () => {
         .finally(()=>setLoading(false))
     },[])
     if(loading) return <div>Loading....</div>
-    return <div>{user.length}</div>
+    return <label>{user.length}</label>
 }
 
 export default useEffectComponent
