@@ -1,11 +1,9 @@
 import { useRef } from "react"
 
 function Counter() {
-  let countRef = useRef(0)
-  countRef.current++
-  return (
-    <div>{`Click ${countRef.current}`}</div>
-  )
+  const countRef = useRef(0);
+  return <button onClick={()=>console.log('Count'+countRef.current++)}>Click {countRef.current}</button>;
 }
+
 
 export default Counter

@@ -1,33 +1,43 @@
-import UseEffectComponent,{ UserList } from "./useEffect/1.useEffect";
+import UseEffectComponent, { UserList } from "./useEffect/1.useEffect";
 import Counter1 from "./useEffect/2.useEffect_with_dependency";
 import Counter2 from "./useRef/1.useRef";
 import Label from "../components/3.presentational_component";
-
+import Input from "./useRef/2.dom_access";
+import Border from "../components/Border";
 function Hooks() {
   return (
-    <div>
-         <div className="border border-black p-2 rounded-2xl">
-      <Label label="useEffect hook to perform side effects" />
+    <>
       <br />
+      <Border>
+        <Label label="useEffect hook to perform side effects" />
+        <br />
         <UseEffectComponent />
-      <Label label="useEffect hook to perform side effects" />
+        <Label label="useEffect hook to perform side effects" />
         <UserList />
-      </div>
-    
-      <div className="border border-black p-2 rounded-2xl">
-      <Label label="useEffect hook to perform side effects with dependency" />
+      </Border>
+
       <br />
+      <Border>
+        <Label label="useEffect hook to perform side effects with dependency" />
+        <br />
         <Counter1 />
-      </div>
+      </Border>
 
-      <div className="border border-black p-2 rounded-2xl">
-      <Label label="useRef case 1 - mutable value across renders(no re render for change value)" />
       <br />
+      <Border>
+        <Label label="useRef case 1 - mutable value across renders(no re render for change value)" />
+        <br />
         <Counter2 />
-      </div>
+      </Border>
 
-    </div>
-  )
+      <br />
+      <Border>
+        <Label label="useRef case 2 - Use in DOM, when value ipdated we dont need to re render so use useRef" />
+        <br />
+        <Input />
+      </Border>
+    </>
+  );
 }
 
-export default Hooks
+export default Hooks;
