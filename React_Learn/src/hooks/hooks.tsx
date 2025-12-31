@@ -4,7 +4,11 @@ import Counter2 from "./useRef/1.useRef";
 import Label from "../components/3.presentational_component";
 import Input from "./useRef/2.dom_access";
 import Border from "../components/Border";
+import { useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
 function Hooks() {
+  const context=useContext(ThemeContext)
+
   return (
     <>
       <br />
@@ -35,6 +39,13 @@ function Hooks() {
         <Label label="useRef case 2 - Use in DOM, when value ipdated we dont need to re render so use useRef" />
         <br />
         <Input />
+      </Border>
+
+      <br />
+      <Border>
+        <Label label="useContext- made a global context provide and wrap it with app" />
+        <br />
+        <div>{context}</div>
       </Border>
     </>
   );

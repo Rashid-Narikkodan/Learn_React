@@ -1,3 +1,3 @@
-import { createContext } from "react";
-import type { ThemeContextType } from "../types/ThemeContext";
-export const ThemeContext = createContext<ThemeContextType|null>(null);
+import {createContext} from 'react'
+
+export const ThemeContext = createContext('light')

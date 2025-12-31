@@ -7,7 +7,7 @@ function FormSubmit() {
     }
     const handleSubmit=(e:FormEvent<HTMLFormElement>)=>{
         e.preventDefault()
-        if(confirm('dsfcsef')){
+        if(confirm(value)){
             e.currentTarget.submit()
         }else{
             throw new Error('error')
