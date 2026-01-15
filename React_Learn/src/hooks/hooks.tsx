@@ -6,6 +6,8 @@ import Input from "./useRef/2.dom_access";
 import Border from "../components/Border";
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
+import UseReducerComp from "./useReducer/useReducer";
+
 function Hooks() {
   const context=useContext(ThemeContext)
 
@@ -46,6 +48,13 @@ function Hooks() {
         <Label label="useContext- made a global context provide and wrap it with app" />
         <br />
         <div>{context}</div>
+      </Border>
+
+      <br />
+      <Border>
+        <Label label="useContext- made a global context provide and wrap it with app" />
+        <br />
+        <UseReducerComp />
       </Border>
     </>
   );

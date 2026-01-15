@@ -7,7 +7,10 @@ const Input = () => {
     }
   return (
  <>
-    <input className='border-black border px-2 py-1 text-black rounded-2xl bg-green-200 mr-1' ref={inputRef} />
+    <input 
+    className='border-black border px-2 py-1 text-black rounded-2xl bg-green-200 mr-1' 
+    ref={inputRef} />
+
     <button onClick={handle}>submit</button>
  </>
   )
